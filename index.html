@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Try Valley Aesthetic's Cryoskin Slimming, Cryoskin Facial, and Skin Analysis intro experience for $129, regularly $550." />
+  <title>Valley Aesthetic | $129 Cryoskin Intro Offer</title>
+  <style>
+    :root {
+      --bg: #F7F3EC;
+      --surface: #FFFDF9;
+      --fg: #193D36;
+      --muted: #5D7068;
+      --border: #D9E0D6;
+      --accent: #C6A66B;
+      --sage: #AAB9A6;
+      --forest-soft: color-mix(in oklch, var(--fg) 8%, var(--bg));
+      --accent-soft: color-mix(in oklch, var(--accent) 18%, transparent);
+      --font-display: 'Bodoni 72', 'Didot', 'Baskerville', 'Times New Roman', serif;
+      --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      --font-mono: ui-monospace, 'SF Mono', Menlo, monospace;
+      --fs-h1: clamp(44px, 6.7vw, 84px);
+      --fs-h2: clamp(34px, 4.3vw, 58px);
+      --fs-h3: clamp(21px, 2vw, 28px);
+      --fs-lead: clamp(18px, 1.8vw, 22px);
+      --fs-body: 17px;
+      --container: 1240px;
+      --gutter: clamp(22px, 4vw, 64px);
+      --radius: 4px;
+      --radius-lg: 18px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: var(--fs-body); line-height: 1.65; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+    body.modal-open { overflow: hidden; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; }
+    p, ul, ol, blockquote { margin: 0; }
+    h1, h2, h3, h4 { margin: 0; font-family: var(--font-display); font-weight: 400; line-height: 1.05; text-wrap: balance; }
+    .container { width: min(100%, var(--container)); margin-inline: auto; padding-inline: var(--gutter); }
+    .section { padding-block: clamp(72px, 10vw, 144px); }
+    .section + .section { border-top: 1px solid var(--border); }
+    .eyebrow { margin-bottom: 18px; color: var(--accent); font-family: var(--font-mono); font-size: 11px; letter-spacing: .14em; line-height: 1.4; text-transform: uppercase; }
+    .lead { max-width: 57ch; color: var(--muted); font-size: var(--fs-lead); line-height: 1.55; }
+    .small { color: var(--muted); font-size: 14px; }
+    .rule { border: 0; border-top: 1px solid var(--border); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 13px 22px; border: 1px solid transparent; border-radius: var(--radius); font-size: 14px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; transition: transform .18s ease, background-color .18s ease, color .18s ease, border-color .18s ease; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--accent); color: var(--fg); border-color: var(--accent); }
+    .btn-primary:hover { background: var(--fg); color: var(--surface); border-color: var(--fg); }
+    .btn-secondary { background: transparent; color: var(--fg); border-color: var(--fg); }
+    .btn-secondary:hover { background: var(--fg); color: var(--surface); }
+    .topnav { position: sticky; top: 0; z-index: 20; background: color-mix(in oklch, var(--bg) 92%, transparent); border-bottom: 1px solid var(--border); backdrop-filter: blur(16px); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 82px; }
+    .logo { display: flex; align-items: center; font-family: var(--font-display); font-size: clamp(23px, 2.3vw, 32px); letter-spacing: .02em; line-height: 1; white-space: nowrap; }
+    .logo img { height: 72px; width: auto; }
+    .logo span { display: block; margin-top: 5px; color: var(--muted); font-family: var(--font-mono); font-size: 8px; letter-spacing: .21em; text-align: center; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: clamp(18px, 3vw, 40px); margin-left: auto; color: var(--muted); font-size: 13px; }
+    .nav-links a:hover { color: var(--fg); }
+    .nav-cta { min-height: 42px; padding-inline: 17px; font-size: 11px; }
+    .hero { padding-block: clamp(64px, 8vw, 112px) clamp(74px, 10vw, 142px); overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, .92fr) minmax(420px, 1.08fr); align-items: center; gap: clamp(40px, 8vw, 112px); }
+    .hero h1 { max-width: 10ch; font-size: var(--fs-h1); letter-spacing: -.035em; }
+    .hero h1 em, h2 em { color: var(--accent); font-style: italic; }
+    .hero-copy .lead { margin-top: 26px; }
+    .hero-copy strong { color: var(--fg); font-weight: 700; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+    .disclaimer { margin-top: 14px; color: var(--muted); font-size: 12px; font-style: italic; }
+    .hero-visual { position: relative; min-height: 590px; }
+    .hero-visual img { width: 100%; height: 590px; object-fit: cover; object-position: 50% 28%; border-radius: 160px 160px 12px 12px; }
+    .image-note { position: absolute; right: -18px; bottom: 28px; max-width: 196px; padding: 16px; background: var(--surface); border: 1px solid var(--border); color: var(--muted); font-size: 12px; line-height: 1.45; box-shadow: 0 16px 40px color-mix(in oklch, var(--fg) 10%, transparent); }
+    .image-note strong { display: block; margin-bottom: 5px; color: var(--fg); font-family: var(--font-display); font-size: 20px; font-weight: 400; }
+    .section-intro { display: grid; grid-template-columns: minmax(220px, .75fr) minmax(0, 1.25fr); gap: clamp(28px, 7vw, 100px); align-items: start; }
+    .section-intro h2 { max-width: 15ch; font-size: var(--fs-h2); letter-spacing: -.025em; }
+    .copy-stack > * + * { margin-top: 22px; }
+    .copy-stack p { max-width: 64ch; }
+    .split-story { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, .72fr); gap: clamp(36px, 7vw, 96px); align-items: start; }
+    .split-story.reverse { grid-template-columns: minmax(300px, .72fr) minmax(0, 1fr); }
+    .story-image { margin-top: 6px; }
+    .story-image img { width: 100%; height: 540px; object-fit: cover; border-radius: 12px 80px 12px 12px; }
+    .story-image.tall img { height: 620px; object-position: 50% 42%; }
+    .quote-block { margin-block: 42px; padding-left: 25px; border-left: 2px solid var(--accent); }
+    .quote-block p { color: var(--fg); font-family: var(--font-display); font-size: clamp(27px, 3.4vw, 45px); line-height: 1.1; }
+    .proof-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 48px; }
+    .proof-grid figure, .results-grid figure, .mosaic figure, .team-grid figure, .fit-images figure { margin: 0; }
+    .proof-grid img { width: 100%; height: 400px; object-fit: contain; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; }
+    figcaption { margin-top: 10px; color: var(--muted); font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+    .steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; margin-top: 52px; border-top: 1px solid var(--fg); }
+    .step { min-height: 250px; padding: 24px 20px 0 0; border-right: 1px solid var(--border); }
+    .step + .step { padding-left: 20px; }
+    .step:last-child { border-right: 0; }
+    .step-num { color: var(--accent); font-family: var(--font-mono); font-size: 12px; letter-spacing: .1em; }
+    .step h3 { margin-top: 30px; font-size: 24px; }
+    .step p { margin-top: 15px; color: var(--muted); font-size: 15px; line-height: 1.55; }
+    .mosaic { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 52px; }
+    .mosaic img { width: 100%; height: 340px; object-fit: cover; object-position: 50% 20%; border-radius: 10px; }
+    .mosaic figure:nth-child(3) img { object-position: 50% 10%; }
+    .results-grid { display: grid; grid-template-columns: .85fr .85fr 1.3fr; grid-template-rows: auto auto; gap: 16px; align-items: start; margin-top: 48px; }
+    .results-grid figure:nth-child(3) { grid-column: 3; grid-row: 1 / span 2; }
+    .results-grid img { width: 100%; height: 250px; object-fit: contain; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; }
+    .results-grid figure:nth-child(3) img { height: 520px; }
+    .offer-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, .82fr); gap: 34px; margin-top: 48px; padding: clamp(26px, 4vw, 46px); background: var(--surface); border: 1px solid var(--border); border-radius: 18px; }
+    .offer-card .btn { margin-top: 28px; }
+.offer-price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .offer-price strong { color: var(--accent); font-family: var(--font-display); font-size: clamp(56px, 7vw, 88px); font-weight: 400; letter-spacing: -.04em; line-height: .9; }
+    .offer-price span { color: var(--muted); font-size: 15px; }
+    .package-list { display: grid; gap: 14px; margin: 24px 0 0; padding: 0; list-style: none; }
+    .package-list li { padding-left: 24px; position: relative; }
+    .package-list li::before { content: '✓'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+    .offer-note { align-self: center; padding: 26px; background: var(--forest-soft); border: 1px solid var(--border); border-radius: 12px; }
+    .offer-note p + p { margin-top: 16px; }
+    .results-source { margin-top: 12px; color: var(--muted); font-size: 12px; font-style: italic; }
+    .benefit-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(340px, .85fr); gap: clamp(38px, 7vw, 108px); align-items: center; }
+    .benefits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; margin-top: 36px; padding: 0; list-style: none; }
+    .benefits li { position: relative; padding-left: 19px; color: var(--muted); }
+    .benefits li::before { content: ''; position: absolute; top: .72em; left: 0; width: 7px; height: 7px; background: var(--accent); border-radius: 50%; }
+    .benefit-image img { width: 100%; height: 600px; object-fit: cover; object-position: 50% 50%; border-radius: 100px 12px 12px 12px; }
+    .team-grid { display: grid; grid-template-columns: 1.18fr .82fr; gap: 18px; margin-top: 48px; align-items: end; }
+    .team-grid img { width: 100%; height: 420px; object-fit: cover; object-position: 50% 18%; border-radius: 12px; }
+    .team-grid figure:nth-child(2) img { height: 300px; object-position: 50% 22%; }
+    .authority { display: grid; grid-template-columns: .8fr 1.2fr; gap: 28px; align-items: center; margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--border); }
+    .authority img { width: 100%; height: 190px; object-fit: cover; border-radius: 8px; }
+    .fit-list { columns: 2; column-gap: 50px; margin-top: 34px; padding-left: 19px; }
+    .fit-list li { break-inside: avoid; margin-bottom: 12px; padding-left: 5px; color: var(--muted); }
+    .fit-list li::marker { color: var(--accent); }
+    .fit-images { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 52px; }
+    .fit-images img { width: 100%; height: 360px; object-fit: cover; border-radius: 10px; }
+    .fit-images figure:first-child img { object-position: 50% 55%; }
+    .not-for { background: var(--forest-soft); }
+    .not-for .split-story { align-items: center; }
+    .not-for .story-image img { height: 320px; object-position: 50% 18%; border-radius: 10px; }
+    .faq-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(280px, .7fr); gap: clamp(36px, 7vw, 108px); align-items: start; }
+    .faq-list { border-top: 1px solid var(--fg); }
+    details { border-bottom: 1px solid var(--border); }
+    summary { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 22px 0; color: var(--fg); cursor: pointer; font-family: var(--font-display); font-size: 23px; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; color: var(--accent); font-family: var(--font-body); font-size: 24px; font-weight: 300; }
+    details[open] summary::after { content: '−'; }
+    details p { max-width: 66ch; padding: 0 40px 22px 0; color: var(--muted); }
+    .faq-image img { width: 100%; height: 560px; object-fit: cover; object-position: 50% 35%; border-radius: 12px 90px 12px 12px; }
+    .final-cta { background: var(--fg); color: var(--surface); }
+    .final-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, .74fr); gap: clamp(36px, 8vw, 112px); align-items: center; }
+    .final-grid .eyebrow { color: var(--accent); }
+    .final-grid h2 { max-width: 14ch; font-size: var(--fs-h2); letter-spacing: -.025em; }
+    .final-grid .lead, .final-grid .disclaimer { color: color-mix(in oklch, var(--surface) 72%, var(--fg)); }
+    .final-grid .btn-secondary { color: var(--surface); border-color: color-mix(in oklch, var(--surface) 52%, transparent); }
+    .final-grid .btn-secondary:hover { background: var(--surface); color: var(--fg); }
+    .final-image img { width: 100%; height: 560px; object-fit: cover; object-position: 50% 35%; border-radius: 12px 12px 110px 12px; }
+    .pagefoot { padding-block: 40px; background: var(--surface); }
+    .footer-inner { display: flex; align-items: end; justify-content: space-between; gap: 32px; }
+    .footer-copy { max-width: 32ch; margin-top: 14px; color: var(--muted); font-size: 13px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 24px; color: var(--muted); font-size: 13px; }
+    .footer-links a:hover { color: var(--fg); }
+    .modal { position: fixed; inset: 0; z-index: 50; display: none; place-items: center; padding: 22px; background: color-mix(in oklch, var(--fg) 62%, transparent); }
+    .modal.is-open { display: grid; }
+    .modal-card { position: relative; width: min(100%, 560px); max-height: min(720px, 92vh); overflow: auto; padding: clamp(26px, 5vw, 46px); background: var(--surface); color: var(--fg); border-radius: 14px; box-shadow: 0 24px 80px color-mix(in oklch, var(--fg) 25%, transparent); }
+    .modal-card h2 { font-size: clamp(34px, 5vw, 52px); }
+    .modal-card .lead { margin-top: 14px; font-size: 16px; }
+    .close-modal { position: absolute; top: 14px; right: 16px; width: 42px; height: 42px; border: 0; background: transparent; color: var(--muted); font-size: 28px; line-height: 1; }
+    .form-grid { display: grid; gap: 16px; margin-top: 26px; }
+    .field { display: grid; gap: 7px; }
+    .field label { color: var(--muted); font-size: 13px; }
+    .input, .textarea { width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--fg); font: inherit; }
+    .input:focus, .textarea:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+    .textarea { min-height: 92px; resize: vertical; }
+    .form-success { display: none; margin-top: 24px; padding: 16px; background: var(--forest-soft); border: 1px solid var(--border); }
+    .form-success.is-visible { display: block; }
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    @media (max-width: 920px) {
+      .nav-links { display: none; }
+      .hero-grid, .section-intro, .split-story, .split-story.reverse, .benefit-grid, .faq-layout, .final-grid { grid-template-columns: 1fr; }
+      .hero-copy { max-width: 680px; }
+      .hero-visual { min-height: 0; }
+      .hero-visual img { height: min(620px, 88vw); }
+      .image-note { right: 12px; }
+      .section-intro h2 { max-width: 18ch; }
+      .steps { grid-template-columns: repeat(2, 1fr); gap: 0; }
+      .step { min-height: 210px; border-bottom: 1px solid var(--border); }
+      .step:nth-child(2n) { border-right: 0; padding-left: 20px; }
+      .step:nth-child(n+3) { padding-top: 24px; }
+      .mosaic, .results-grid, .team-grid { grid-template-columns: repeat(2, 1fr); }
+      .mosaic figure:first-child { grid-column: span 2; }
+      .mosaic img { height: 340px; }
+      .mosaic figure:nth-child(3) img { object-position: 50% 10%; }
+      .results-grid figure:nth-child(3) { grid-column: span 2; grid-row: auto; }
+      .results-grid img, .results-grid figure:nth-child(3) img { height: 390px; }
+      .team-grid figure:first-child { grid-column: span 2; }
+      .team-grid img, .team-grid figure:nth-child(2) img { height: 360px; object-position: 50% 18%; }
+      .authority { grid-template-columns: 1fr; }
+      .authority img { height: 250px; }
+      .benefit-image { order: -1; }
+      .benefit-image img { height: min(620px, 88vw); }
+      .faq-image { order: -1; }
+      .faq-image img { height: min(500px, 70vw); }
+      .final-image { order: -1; }
+      .final-image img { height: min(540px, 85vw); }
+      .offer-card { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      :root { --fs-body: 16px; }
+      .nav-inner { min-height: 70px; }
+      .logo { font-size: 23px; }
+      .logo img { height: 56px; }
+      .nav-cta { min-height: 38px; padding: 9px 12px; font-size: 10px; }
+      .hero { padding-top: 54px; }
+      .hero h1 { max-width: 12ch; }
+      .hero-visual img { height: 540px; border-radius: 110px 110px 10px 10px; }
+      .image-note { right: 0; bottom: 16px; }
+      .proof-grid, .fit-images, .mosaic, .results-grid, .team-grid { grid-template-columns: 1fr; }
+      .proof-grid img, .fit-images img { height: 330px; }
+      .mosaic figure:first-child, .results-grid figure:nth-child(3), .team-grid figure:first-child { grid-column: auto; }
+      .mosaic img, .mosaic figure:first-child img, .results-grid img, .results-grid figure:nth-child(3) img, .team-grid img, .team-grid figure:nth-child(2) img { height: 320px; object-position: 50% 18%; }
+      .mosaic figure:nth-child(3) img { object-position: 50% 10%; }
+      .benefits { grid-template-columns: 1fr; }
+      .fit-list { columns: 1; }
+      .steps { grid-template-columns: 1fr; }
+      .step, .step:nth-child(2n) { min-height: auto; padding: 22px 0; border-right: 0; }
+      .step:first-child { padding-top: 24px; }
+      summary { font-size: 20px; }
+      .footer-inner { align-items: start; flex-direction: column; }
+      .footer-links { gap: 14px 20px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topnav" data-od-id="topnav">
+    <div class="container nav-inner">
+      <a class="logo" href="#top" aria-label="Valley Aesthetic home"><img src="logo-nav.png" alt="Valley Aesthetic" /></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#approach">Our approach</a>
+        <a href="#results">Results</a>
+        <a href="#team">Our team</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button class="btn btn-primary nav-cta" type="button" data-open-offer>Claim the $129 Offer</button>
+    </div>
+  </header>
+
+<main id="top">
+    <section class="section hero" data-od-id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal"><p class="eyebrow">Limited intro offer · $129</p><h1>Stubborn Fat or Loose Skin That Won’t Budge?</h1><p class="lead">Try Cryoskin Slimming + Facial at Valley Aesthetic for <strong>$129</strong>. Target stubborn areas, improve the appearance of loose skin, and give your face and body a smoother, more sculpted look with a non-invasive Cryoskin experience.</p><div class="offer-price"><strong>$129</strong><span>Intro offer · regularly $550</span></div><ul class="package-list"><li>1 Cryoskin Slimming Treatment</li><li>1 Cryoskin Facial</li><li>1 Skin Analysis</li></ul><div class="hero-cta"><button class="btn btn-primary" type="button" data-open-offer>Claim the $129 Offer</button><a class="btn btn-secondary" href="#offer">See what’s included</a></div><p class="disclaimer">No needles. No surgery. No downtime.<br />Limited introductory offer. Eligibility required. Individual results may vary.</p></div>
+        <div class="hero-visual reveal"><img src="ChatGPT Image Aug 6, 2026, 02_04_34 AM (8).png" alt="Cryoskin-style applicator being used on a patient's abdomen during a body-contouring treatment" /><div class="image-note"><strong>One offer. Face + body.</strong> Try Cryoskin Slimming, Cryoskin Facial, and a Skin Analysis in one introductory experience.</div></div>
+      </div>
+    </section>
+
+    <section class="section" data-od-id="problem"><div class="container"><div class="section-intro reveal"><div><p class="eyebrow">The concern</p><h2>You Can Do Everything “Right” and Still Have Areas That Won’t Change.</h2></div><div class="copy-stack"><p>You eat better. You work out. You lose weight. And somehow that one area still hangs on.</p><p>Maybe it’s your stomach, your waist, your arms, or skin that doesn’t feel as firm as it used to. Sometimes the problem isn’t that you need to lose more weight. It’s that certain areas simply aren’t responding the way the rest of your body does.</p><h3>That’s Where Cryoskin Comes In.</h3><p>Cryoskin is designed for people who want to target specific areas without needles, surgery, or putting their life on hold afterward.</p><ul class="benefits"><li>Stubborn areas of fat</li><li>Loose or less-firm-looking skin</li><li>Areas you’d like to look more sculpted</li><li>Uneven-looking body contours</li><li>Tired or less-firm-looking facial skin</li></ul></div></div></div></section>
+
+    <section class="section" id="approach" data-od-id="approach"><div class="container"><div class="section-intro reveal"><div><p class="eyebrow">The Cryoskin approach</p><h2>A More Targeted Approach to Body Contouring.</h2></div><div class="copy-stack"><p>Cryoskin uses controlled temperature changes delivered through a specialized treatment wand. The applicator is moved across the treatment area while alternating temperatures are used as part of the body-contouring process.</p><p>The experience is completely non-invasive. No needles. No incisions. And no recovery period that forces you to rearrange your week.</p></div></div><div class="offer-card reveal"><div><p class="eyebrow">One technology. Two different goals.</p><h3>Cryoskin Slimming</h3><p style="margin-top:12px;">Designed to target stubborn areas and help create a more sculpted-looking contour. Common treatment areas may include the abdomen, waist, arms, thighs, or other stubborn areas based on eligibility.</p><h3 style="margin-top:30px;">Cryoskin Facial</h3><p style="margin-top:12px;">A facial application designed to support a smoother, firmer, more refreshed-looking appearance. Because your intro offer includes both, you don’t have to choose between trying the body treatment and experiencing Cryoskin on the face.</p></div><figure class="benefit-image"><img src="ChatGPT Image Aug 6, 2026, 02_07_27 AM (2).png" alt="Patient receiving a Cryoskin facial treatment with a blue-lit applicator" /><figcaption>Device-based facial treatment in a real care setting</figcaption></figure></div></div></section>
+
+    <section class="section" id="offer" data-od-id="offer"><div class="container"><div class="section-intro reveal"><div><p class="eyebrow">What you get for $129</p><h2>The Complete Cryoskin Intro Experience.</h2></div><div class="copy-stack"><p>Your introductory appointment includes the body, facial, and assessment pieces in one focused package.</p><p>Normally $550. Today: $129.</p></div></div><div class="offer-card reveal"><div><ul class="package-list"><li><strong>1 Cryoskin Slimming Treatment</strong><br /><span class="small">Experience Cryoskin body contouring on an eligible target area. The goal is simple: focus the treatment where you want improvement instead of treating your entire body.</span></li><li><strong>1 Cryoskin Facial</strong><br /><span class="small">Experience Cryoskin on the face with a treatment designed to support a firmer, smoother, and more refreshed appearance.</span></li><li><strong>1 Skin Analysis</strong><br /><span class="small">Take a closer look at your skin before simply guessing what it needs. Your analysis helps the Valley Aesthetic team understand your starting point and concerns.</span></li></ul><div class="offer-price"><strong>$129</strong><span>Regularly $550</span></div><button class="btn btn-primary" type="button" data-open-offer>Claim the $129 Offer</button><p class="disclaimer">Offer availability and treatment eligibility may vary.</p></div><div class="offer-note"><p class="eyebrow">The full package</p><h3>Face + body + skin analysis.</h3><p>This is one introductory Cryoskin experience, not a choice between separate service lanes.</p><p class="small">Individual results may vary.</p></div></div></div></section>
+
+    <section class="section" data-od-id="benefits"><div class="container"><div class="section-intro reveal"><div><p class="eyebrow">Why people are trying Cryoskin</p><h2>Body Contouring Without the Things You Don’t Want.</h2></div><div class="copy-stack"><p>You want improvement. That doesn’t automatically mean you want needles or surgery. Cryoskin gives eligible clients another option.</p></div></div><div class="steps reveal"><article class="step"><span class="step-num">01</span><h3>Non-invasive</h3><p>Nothing is injected and no incisions are made.</p></article><article class="step"><span class="step-num">02</span><h3>No downtime</h3><p>Get back to your normal day after treatment.</p></article><article class="step"><span class="step-num">03</span><h3>Target specific areas</h3><p>Focus on the particular area that bothers you.</p></article><article class="step"><span class="step-num">04</span><h3>Face + body</h3><p>Experience both applications in one intro offer.</p></article><article class="step"><span class="step-num">05</span><h3>Professional guidance</h3><p>The team can explain what is realistic before you commit to anything further.</p></article></div></div></section>
+
+    <section class="section" id="results" data-od-id="results"><div class="container"><div class="section-intro reveal"><div><p class="eyebrow">Visual proof</p><h2>REAL CRYOSKIN RESULTS</h2></div><div class="copy-stack"><h3>Different Bodies. Different Starting Points. Different Results.</h3><p>Don’t just take our word for it. See what Cryoskin treatment can look like on real people.</p><p>Cryoskin isn’t about promising the exact same outcome to everyone. Treatment response depends on the individual, the area being treated, and the number of sessions recommended.</p></div></div><div class="results-grid reveal"><figure><img src="https://storage.googleapis.com/msgsndr/3URQbv7AiGlgzfKqgQY3/media/b8f4ef06-b0ed-4bed-a264-45abcd8291d9.jpeg" alt="Cryoskin before-and-after result from Valley Aesthetic's existing Cryoskin page" /><figcaption>Real Cryoskin result · Before &amp; after</figcaption></figure><figure><img src="https://storage.googleapis.com/msgsndr/3URQbv7AiGlgzfKqgQY3/media/ebba8a3c-9dc0-4fc4-b177-a3f5325e727c.jpeg" alt="Cryoskin before-and-after result from Valley Aesthetic's existing Cryoskin page" /><figcaption>Real Cryoskin result · Before &amp; after</figcaption></figure><figure><img src="https://storage.googleapis.com/msgsndr/3URQbv7AiGlgzfKqgQY3/media/f74a7b32-f7bc-4fba-a23e-3f439ee4b4ff.jpeg" alt="Cryoskin before-and-after result from Valley Aesthetic's existing Cryoskin page" /><figcaption>Real Cryoskin result · Before &amp; after</figcaption></figure><figure><img src="https://storage.googleapis.com/msgsndr/3URQbv7AiGlgzfKqgQY3/media/ae6bc955-c1f2-47e2-9a85-4ed8672b05e5.jpeg" alt="Cryoskin before-and-after result from Valley Aesthetic's existing Cryoskin page" /><figcaption>Real Cryoskin result · Before &amp; after</figcaption></figure><figure><img src="https://storage.googleapis.com/msgsndr/3URQbv7AiGlgzfKqgQY3/media/b15c821e-6b85-437a-aad5-f65e0fa5e1f3.jpeg" alt="Cryoskin before-and-after result from Valley Aesthetic's existing Cryoskin page" /><figcaption>Real Cryoskin result · Before &amp; after</figcaption></figure><figure><img src="https://storage.googleapis.com/msgsndr/3URQbv7AiGlgzfKqgQY3/media/4afb7e1d-3ed0-456e-a55f-6fe97422474f.jpeg" alt="Cryoskin before-and-after result from Valley Aesthetic's existing Cryoskin page" /><figcaption>Real Cryoskin result · Before &amp; after</figcaption></figure><figure><img src="https://storage.googleapis.com/msgsndr/3URQbv7AiGlgzfKqgQY3/media/372c1ed5-b4d9-4774-907d-5d16c4de3bb5.jpeg" alt="Cryoskin before-and-after result from Valley Aesthetic's existing Cryoskin page" /><figcaption>Real Cryoskin result · Before &amp; after</figcaption></figure><figure><img src="https://storage.googleapis.com/msgsndr/3URQbv7AiGlgzfKqgQY3/media/f1b285d7-85ac-47ff-a498-d11e03ddac11.jpeg" alt="Cryoskin before-and-after result from Valley Aesthetic's existing Cryoskin page" /><figcaption>Real Cryoskin result · Before &amp; after</figcaption></figure><figure><img src="https://storage.googleapis.com/msgsndr/3URQbv7AiGlgzfKqgQY3/media/da944a93-ae05-4e07-82c7-090fe5bf0e87.jpeg" alt="Cryoskin before-and-after result from Valley Aesthetic's existing Cryoskin page" /><figcaption>Real Cryoskin result · Before &amp; after</figcaption></figure><figure><img src="https://storage.googleapis.com/msgsndr/3URQbv7AiGlgzfKqgQY3/media/a0f836e8-d428-4a62-b176-61ddca2cd433.jpeg" alt="Cryoskin before-and-after result from Valley Aesthetic's existing Cryoskin page" /><figcaption>Real Cryoskin result · Before &amp; after</figcaption></figure><figure><img src="https://storage.googleapis.com/msgsndr/3URQbv7AiGlgzfKqgQY3/media/bbb546ea-6893-4e98-a51f-d75d496356c5.jpeg" alt="Cryoskin before-and-after result from Valley Aesthetic's existing Cryoskin page" /><figcaption>Real Cryoskin result · Before &amp; after</figcaption></figure><figure><img src="https://storage.googleapis.com/msgsndr/3URQbv7AiGlgzfKqgQY3/media/756aeccf-732e-471e-8f0e-aafd053f6656.jpeg" alt="Cryoskin before-and-after result from Valley Aesthetic's existing Cryoskin page" /><figcaption>Real Cryoskin result · Before &amp; after</figcaption></figure></div><p class="small" style="margin-top:24px;">Individual results may vary.</p><div class="offer-card" style="margin-top:40px;"><div><p class="eyebrow">Limited intro offer</p><h3>The Complete Cryoskin Intro Experience</h3><div class="offer-price"><strong>$129</strong><span>Regularly $550</span></div><ul class="package-list"><li>1 Cryoskin Slimming Treatment</li><li>1 Cryoskin Facial</li><li>1 Skin Analysis</li></ul><button class="btn btn-primary" type="button" data-open-offer>Claim the $129 Offer</button><p class="disclaimer">No needles. No surgery. No downtime.<br />Eligibility required. Individual results may vary.</p></div><div class="offer-note"><p class="eyebrow">One offer. Face + body.</p><h3>Everything in one introductory experience.</h3><p>You don't have to choose between trying the body treatment and experiencing Cryoskin on the face. Both are included.</p></div></div></div></section>
+
+    <section class="section" data-od-id="how-it-works"><div class="container"><div class="section-intro reveal"><div><p class="eyebrow">What a Cryoskin session looks like</p><h2>No Needles. No Surgery. Just a Handheld Treatment.</h2></div><p class="lead">If you’ve never experienced Cryoskin before, the process is straightforward.</p></div><div class="steps reveal"><article class="step"><span class="step-num">01</span><h3>Choose the concern</h3><p>Tell the Valley Aesthetic team which area you’d most like to improve.</p></article><article class="step"><span class="step-num">02</span><h3>Confirm eligibility</h3><p>The team makes sure Cryoskin is appropriate for you and determines which area should be treated.</p></article><article class="step"><span class="step-num">03</span><h3>Your Cryoskin treatment</h3><p>A specialized handheld applicator is moved over the target area using controlled temperature changes.</p></article><article class="step"><span class="step-num">04</span><h3>Get back to your day</h3><p>There is no surgical recovery period or planned downtime.</p></article><article class="step"><span class="step-num">05</span><h3>Evaluate your results</h3><p>Your body and starting point are unique. The team can help determine whether additional sessions make sense.</p></article></div><div style="margin-top:76px;"><p class="eyebrow">Professional care. Advanced technology.</p><p class="lead">Recommendations based on you.</p></div><div class="mosaic reveal"><figure><img src="ChatGPT Image Aug 6, 2026, 02_07_29 AM (8).png" alt="Patient receiving a close-up Cryoskin facial treatment" /></figure><figure><img src="ChatGPT Image Aug 6, 2026, 02_07_28 AM (6).png" alt="Valley Aesthetic provider standing with Cryoskin-related treatment equipment" /></figure><figure><img src="ChatGPT Image Aug 6, 2026, 02_07_29 AM (10).png" alt="Provider holding a device used in an aesthetic treatment setting" /></figure></div></div></section>
+
+    <section class="section" id="team" data-od-id="team"><div class="container"><div class="section-intro reveal"><div><p class="eyebrow">Why Valley Aesthetic?</p><h2>You’re Not Being Treated by a Website.</h2></div><div class="copy-stack"><p>You’re being treated by real aesthetic professionals. Valley Aesthetic serves North Bergen and the surrounding area with a team focused on personalized aesthetic care and advanced treatment technology.</p><p>The equipment matters. But so does the person using it, and knowing when Cryoskin actually makes sense for the person sitting in front of you.</p><h3>Professional Care. Real People. No Assembly-Line Approach.</h3></div></div><div class="team-grid reveal"><figure><img src="ChatGPT Image Aug 6, 2026, 02_04_35 AM (9).png" alt="Three Valley Aesthetic team members together in a professional setting" /><figcaption>Professional care. Real people.</figcaption></figure><figure><img src="download-_4_.jpg" alt="Valley Aesthetic team members in a professional aesthetic-industry environment" /><figcaption>Committed to considered care</figcaption></figure></div><div class="authority reveal"><div><p class="eyebrow">Personalized evaluation</p><p>The team takes the time to understand what area bothers you, what improvement you’re hoping for, whether Cryoskin is appropriate, and what you can realistically expect.</p></div></div></div></section>
+
+    <section class="section" data-od-id="is-this-for-me"><div class="container"><div class="section-intro reveal"><div><p class="eyebrow">This offer may be for you if…</p><h2>You’re Curious About Cryoskin but Not Ready for a Big Commitment.</h2></div><p class="lead">The $129 offer is designed to let you experience both the body and facial applications first.</p></div><ul class="fit-list reveal"><li>You’re close to your goal but have one stubborn area that bothers you.</li><li>Your stomach or waist isn’t responding the way you’d like.</li><li>You’d like your arms or another area to appear firmer or more sculpted.</li><li>You’ve noticed less-firm-looking skin.</li><li>You want to improve facial firmness or overall appearance without injections.</li><li>You want a non-invasive body-contouring option.</li><li>You don’t want to commit to an expensive package before experiencing Cryoskin.</li><li>You like the idea of trying both the body and facial applications first.</li></ul><div class="fit-images reveal"><figure><img src="ChatGPT Image Aug 6, 2026, 02_04_34 AM (8).png" alt="Cryoskin-style applicator being used on a patient's abdomen" /><figcaption>Targeted body-contouring experience</figcaption></figure><figure><img src="ChatGPT Image Aug 6, 2026, 02_07_27 AM (2).png" alt="Patient receiving a Cryoskin facial treatment with a blue-lit applicator" /><figcaption>Facial application included</figcaption></figure></div></div></section>
+
+    <section class="section not-for" data-od-id="not-for"><div class="container split-story"><div class="copy-stack reveal"><p class="eyebrow">Realistic expectations first</p><h2>This Isn’t a Magic Weight-Loss Treatment.</h2><p>And we don’t want to pretend it is.</p><p>Cryoskin is a targeted aesthetic treatment. It isn’t a substitute for healthy eating, exercise, or medical weight-loss care. It also doesn’t mean every person will see the exact same change from one treatment.</p><p>Some people may be better candidates than others. Some goals may require multiple sessions. Certain concerns may be better addressed with a different approach entirely.</p><p>That’s why Valley Aesthetic evaluates the individual before making recommendations.</p><div class="quote-block"><p>Realistic expectations first. Treatment second.</p></div></div><figure class="story-image reveal"><img src="ChatGPT Image Aug 6, 2026, 02_07_27 AM (1).png" alt="Valley Aesthetic provider delivering personalized Cryoskin treatment guidance" /><figcaption>The technology supports the recommendation</figcaption></figure></div></section>
+
+    <section class="section" id="faq" data-od-id="faq"><div class="container faq-layout"><div class="reveal"><p class="eyebrow">Frequently asked questions</p><h2>Start With the Details.</h2><div class="faq-list" style="margin-top:48px;"><details open><summary>What exactly is included in the $129 offer?</summary><p>The introductory offer includes 1 Cryoskin Slimming Treatment, 1 Cryoskin Facial, and 1 Skin Analysis. The regular stated value is $550. Your intro price is $129.</p></details><details><summary>Is Cryoskin invasive?</summary><p>No. Cryoskin is performed externally using a handheld treatment applicator. There are no injections or surgical incisions involved.</p></details><details><summary>Is there downtime?</summary><p>Cryoskin is promoted as a no-downtime treatment, so you can generally return to your normal activities afterward.</p></details><details><summary>What does the treatment feel like?</summary><p>Cryoskin involves changing temperatures while the applicator is moved across the treatment area. Many clients find the treatment manageable and some describe the massaging process as relaxing.</p></details><details><summary>Can I see a difference after one treatment?</summary><p>Some clients may notice a visible change after an initial session. However, everyone’s body and goals are different. Your results cannot be predicted from someone else’s before-and-after photo.</p></details><details><summary>Will I need more than one treatment?</summary><p>Possibly. A series may be recommended depending on your goals and response. The $129 offer lets you experience Cryoskin before deciding whether additional sessions make sense.</p></details><details><summary>Is Cryoskin a weight-loss treatment?</summary><p>No. Think of Cryoskin as a targeted aesthetic/body-contouring treatment rather than a substitute for weight loss.</p></details><details><summary>Can anyone receive Cryoskin?</summary><p>Not necessarily. Treatment eligibility depends on the individual. The Valley Aesthetic team should confirm that Cryoskin is appropriate for you before treatment.</p></details><details><summary>What happens after I claim the offer?</summary><p>Follow the booking steps and the Valley Aesthetic team will help confirm the offer, discuss the area you’d like to target, check eligibility, and arrange your appointment.</p></details></div></div><figure class="faq-image reveal"><img src="ChatGPT Image Aug 6, 2026, 02_07_29 AM (9).png" alt="Patient receiving attentive care during a Valley Aesthetic Cryoskin consultation" /><figcaption>A private conversation about your goals and eligibility</figcaption></figure></div></section>
+
+    <section class="section final-cta" data-od-id="final-cta"><div class="container final-grid"><div class="reveal"><p class="eyebrow">Limited introductory offer</p><h2>Still Fighting That One Stubborn Area?</h2><p class="lead" style="margin-top:24px;">You don’t have to commit to surgery. You don’t have to start with an expensive treatment package. Experience Cryoskin for yourself.</p><div class="offer-price"><strong>$129</strong><span>Regularly $550</span></div><ul class="package-list"><li>1 Cryoskin Slimming Treatment</li><li>1 Cryoskin Facial</li><li>1 Skin Analysis</li></ul><div class="hero-cta"><button class="btn btn-primary" type="button" data-open-offer>Claim the $129 Offer</button><a class="btn btn-secondary" href="#top">Back to top</a></div><p class="disclaimer">No needles. No surgery. No downtime.<br />Limited introductory offer. Eligibility required. Individual results may vary.</p></div><figure class="final-image reveal"><img src="ChatGPT Image Aug 6, 2026, 02_07_28 AM (6).png" alt="Valley Aesthetic provider standing beside Cryoskin-related treatment equipment" /><figcaption>Start with the treatment experience</figcaption></figure></div></section>
+  </main>
+
+  <footer class="pagefoot" data-od-id="footer">
+     <div class="container footer-inner"><div><a class="logo" href="#top"><img src="logo-nav.png" alt="Valley Aesthetic" /></a><p class="footer-copy">A focused Cryoskin intro experience for eligible clients in North Bergen and the surrounding area.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="#approach">Cryoskin</a><a href="#offer">Offer</a><a href="#results">Results</a><a href="#faq">FAQ</a><a href="#top">Back to top</a></nav></div>
+  </footer>
+
+  <div class="modal" id="offer-modal" role="dialog" aria-modal="true" aria-labelledby="offer-title">
+     <div class="modal-card"><button class="close-modal" type="button" aria-label="Close offer form" data-close-offer>×</button><p class="eyebrow">Claim the $129 Cryoskin Offer</p><h2 id="offer-title">See if you qualify for the intro experience.</h2><p class="lead">The package includes 1 Cryoskin Slimming Treatment, 1 Cryoskin Facial, and 1 Skin Analysis. Regularly $550.</p><form class="form-grid" id="offer-form"><div class="field"><label for="name">Name</label><input class="input" id="name" name="name" autocomplete="name" required /></div><div class="field"><label for="contact">Email or phone</label><input class="input" id="contact" name="contact" autocomplete="email" required /></div><div class="field"><label for="concern">Which area would you like to target?</label><textarea class="textarea" id="concern" name="concern" required></textarea></div><button class="btn btn-primary" type="submit">Get the $129 Cryoskin Offer</button></form><div class="form-success" id="form-success" role="status">Thank you. Your request has been noted for the Valley Aesthetic team. Eligibility and offer details will be confirmed before booking.</div></div>
+  </div>
+
+  <script>
+    const modal = document.querySelector('#offer-modal');
+    const form = document.querySelector('#offer-form');
+    const success = document.querySelector('#form-success');
+    const openModal = () => { modal.classList.add('is-open'); document.body.classList.add('modal-open'); setTimeout(() => document.querySelector('#name').focus(), 50); };
+    const closeModal = () => { modal.classList.remove('is-open'); document.body.classList.remove('modal-open'); };
+    document.querySelectorAll('[data-open-offer]').forEach((button) => button.addEventListener('click', openModal));
+    document.querySelector('[data-close-offer]').addEventListener('click', closeModal);
+    modal.addEventListener('click', (event) => { if (event.target === modal) closeModal(); });
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && modal.classList.contains('is-open')) closeModal(); });
+    form.addEventListener('submit', (event) => { event.preventDefault(); form.reset(); success.classList.add('is-visible'); });
+    const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } }), { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+  </script>
+</body>
+</html>
